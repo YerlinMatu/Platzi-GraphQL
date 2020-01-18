@@ -1,14 +1,26 @@
 type Course {
 	_id: ID!
-	title: String
+	title: String!
 	teacher: String
 	description: String
 	topic: String
 }
 
 type Query {
-  "return all courses"
+  "Return all courses"
   getCourses: [Course]
-  "return a course"
+  "Return a course"
   getCourse(id: ID!): Course
+}
+
+input CourseInput {
+  title: String!
+	teacher: String
+	description: String
+	topic: String
+}
+
+type Mutation {
+  "Create a course"
+  createCourse(input: CourseInput!): Course
 }
