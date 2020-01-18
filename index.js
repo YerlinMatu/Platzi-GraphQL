@@ -9,10 +9,26 @@ const {
 const schema = buildSchema(`
   type Query {
     hello: String
+    greeted: String
   }
 `)
 
+// Resolvers config
+const resolvers = {
+  hello: () => {
+    return 'Hello World'
+  },
+  greeted: () => {
+    return 'Welcome'
+  }
+}
+
 // run query 'hello'
-graphql(schema, '{ hello }').then(data => {
+graphql(schema, '{ hello }', resolvers).then(data => {
   console.log(data);
 })
+
+graphql(schema, '{ greeted }', resolvers).then(data => {
+  console.log(data);
+})
+
