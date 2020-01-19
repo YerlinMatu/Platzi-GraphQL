@@ -1,4 +1,4 @@
-# Courses - Platzi
+# Courses API - Platzi
 
 ### Configuración de base de datos
 
