@@ -7,27 +7,27 @@ type Course {
 }
 
 type Student {
-  _id: ID!
-  fullName: String!
-  email: String!
+	_id: ID!
+	fullName: String!
+	email: String!
 }
 
 type Query {
-  getCourses: [Course]
-  getSingleCourse(id: ID!): Course
-  getStudents: [Student]
-  getSingleStudent(id: ID!): Student
+	getCourses: [Course]
+	getSingleCourse(id: ID!): Course
+	getStudents: [Student]
+	getSingleStudent(id: ID!): Student
 }
 
 input CourseInput {
-  title: String!
+	title: String!
 	teacher: String
 	description: String
 	topic: String
 }
 
 input CourseEditInput {
-  title: String
+	title: String
 	teacher: String
 	description: String
 	topic: String
@@ -35,20 +35,20 @@ input CourseEditInput {
 
 
 input StudentInput {
-  fullName: String!
-  email: String!
+	fullName: String!
+	email: String!
 }
 
 input StudentEditInput {
-  fullName: String
-  email: String
+	fullName: String
+	email: String
 }
 
 type Mutation {
-  addCourse(input: CourseInput!): Course
-  editCourse(_id: ID!, input: CourseEditInput): Course
-  deleteCourse(_id: ID!): Course
-  addStudent(input: StudentInput!): Student
-  editStudent(_id: ID!, input: StudentEditInput): Student
-  deleteStudent(_id: ID!): Student
+	addCourse(input: CourseInput!): Course
+	editCourse(_id: ID!, input: CourseEditInput): Course
+	deleteCourse(_id: ID!): Course
+	addStudent(input: StudentInput!): Student
+	editStudent(_id: ID!, input: StudentEditInput): Student
+	deleteStudent(_id: ID!): Student
 }
