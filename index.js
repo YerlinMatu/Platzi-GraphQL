@@ -9,7 +9,7 @@ const { join } = require('path')
 const resolvers = require('./lib/resolvers')
 
 const app = express();
-const port = process.env.port || 3000
+const port = process.env.SERVER_PORT || 3000
 
 const typeDefs = readFileSync(
   join(__dirname, 'lib', 'schema.graphql'),
