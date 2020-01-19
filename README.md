@@ -1,5 +1,12 @@
 # Courses API - Platzi
 
+### Instalación
+``` npm install ```
+### Ejecución en Dev
+``` npm run dev ```
+### Ejecución en Prod
+``` npm run start ```
+
 ### Configuración de base de datos
 
 - Configuración de base de datos
