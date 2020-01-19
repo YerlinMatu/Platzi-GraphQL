@@ -1,4 +1,5 @@
 # Courses - Platzi
+
 ### Configuración de base de datos
 
 - Configuración de base de datos
