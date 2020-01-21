@@ -1,4 +1,4 @@
-# Courses API - Platzi
+# Courses API
 
 ### Instalación
 ``` npm install ```
